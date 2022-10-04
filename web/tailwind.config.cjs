@@ -9,13 +9,13 @@ module.exports = {
       center: true,
     },
     fontSize: {
-      xs: ['12px,', '16px'],
-      sm: ['14px,', '18px'],
-      base: ['16px,', '24px'],
-      lg: ['20px,', '28px'],
-      xl: ['24px,', '32px'],
-      '2xl': ['32px,', '40px'],
-      '3xl': ['48px,', '56px'],
+      xs: ['12px', '16px'],
+      sm: ['14px', '18px'],
+      base: ['16px', '24px'],
+      lg: ['20px', '28px'],
+      xl: ['24px', '32px'],
+      '2xl': ['32px', '40px'],
+      '3xl': ['48px', '56px'],
     },
     extend: {
       colors: {
@@ -23,8 +23,8 @@ module.exports = {
        white: '#F4F6FF',
        gray: {
         300: '#B1B4BD',
-        500: '91949D',
-        700: '696C74',
+        500: '#91949D',
+        700: '#696C74',
        },
        red: {
         300: '#BB2E57',
