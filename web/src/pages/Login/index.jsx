@@ -1,4 +1,4 @@
-import { Icon, Input } from './../../components'
+import { Icon, Input } from '~/components'
 
 export const Login = () => {
     return (
