@@ -1,4 +1,4 @@
-import { Icon } from './../../components'
+import { Icon } from '../../components'
 
 const Input = ({ name, label, ...props}) => (
     <div className="flex flex-col">
@@ -7,7 +7,7 @@ const Input = ({ name, label, ...props}) => (
     </div>
 )
 
-export const Login = () => {
+export const Signup = () => {
     return (
         <div>
             <header className="p-4 border-b border-red-300">
@@ -20,10 +20,23 @@ export const Login = () => {
                     <a href="/">
                     <Icon name="arrowLeft" className="h-6"/>
                     </a>
-                    <h2 className="text-xl font-bold">Entre na sua conta</h2>
+                    <h2 className="text-xl font-bold">Crie sua conta</h2>
                 </div>
 
                 <form className="p-4 space-y-6">
+                    <Input
+                        type="text"
+                        name="name"
+                        label="Seu nome"
+                        placeholder="Digite seu nome"
+                    />
+
+                    <Input
+                        type="text"
+                        name="username"
+                        label="Seu nome de usuário"
+                        placeholder="Digite um nome de usuário"
+                    />
                     <Input
                         type="text"
                         name="email"
@@ -38,7 +51,7 @@ export const Login = () => {
                         placeholder="Digite sua senha"
                     />
                     <button  className="w-full text-center text-white bg-red-500 px-6 py-3 rounded-xl"text-center >
-                        Entrar
+                        Criar minha Conta
                     </button>
                 </form>
             </main>
