@@ -11,7 +11,7 @@ export const Login = () => {
             <main className="container max-w-xl p-4">
                 <div className="flex space-x-4 items-center">
                     <a href="/">
-                    <Icon name="arrowLeft" className="h-6"/>
+                    <Icon name="back" className="h-6"/>
                     </a>
                     <h2 className="text-xl font-bold">Entre na sua conta</h2>
                 </div>
@@ -30,9 +30,9 @@ export const Login = () => {
                         label="Sua senha"
                         placeholder="Digite sua senha"
                     />
-                    <button  className="w-full text-center text-white bg-red-500 px-6 py-3 rounded-xl"text-center >
+                    <a href="/dashboard" className="w-full text-center text-white bg-red-500 px-6 py-3 rounded-xl"text-center >
                         Entrar
-                    </button>
+                    </a>
                 </form>
             </main>
         </div>
