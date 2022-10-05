@@ -50,7 +50,7 @@ export const Signup = () => {
                         label="Sua senha"
                         placeholder="Digite sua senha"
                     />
-                    <a href="/dashboard" className="block w-full text-center text-white bg-red-500 px-6 py-3 rounded-xl"text-center >
+                    <a href="/dashboard" className="block w-full text-center text-white bg-red-500 px-6 py-3 rounded-xl">
                         Criar minha Conta
                     </a>
                 </form>
