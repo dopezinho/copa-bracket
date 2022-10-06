@@ -4,6 +4,9 @@
   "main": "server.js",
   "type": "module",
   "scripts": {},
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
   "author": {
     "name": "fezinho",
     "email": "opugnero@gmail.com"
@@ -12,6 +15,7 @@
   "dependencies": {
     "@koa/cors": "^3.4.2",
     "@koa/router": "^12.0.0",
+    "@prisma/client": "^4.4.0",
     "koa": "^2.13.4",
     "koa-bodyparser": "^4.3.0"
   },
