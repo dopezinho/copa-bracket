@@ -2,10 +2,18 @@ import Router from '@koa/router'
 
 export const router = new Router()
 
-router.get('/', async ctx => {
-    ctx.body = { ola: "Mundo" }
-})
+const users = []
 
 router.get('/users', async ctx => {
-    ctx.body = { ola: "Users" }
+    ctx.body = users
+})
+
+router.post('/users', async ctx => {
+    const user = {
+        username: ctx.request.body.username
+    }
+
+    users.push(user)
+
+    ctx.body = user
 })
