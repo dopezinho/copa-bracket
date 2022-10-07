@@ -6,7 +6,7 @@ export const create = async ctx => {
         ctx.status = 400
         return
     }
-}
+
 
 const userId = 'cl8xb70390000wf2w0871b8zy'
 const { gameId } = ctx.request.body
@@ -41,4 +41,5 @@ try {
     console.log(error)
     ctx.body = error
     ctx.status = 500
+}
 }
