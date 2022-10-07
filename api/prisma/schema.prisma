@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
   previewFeatures = ["referentialIntegrity"]
@@ -16,7 +13,7 @@ model User {
   id String @id @default(cuid())
   name String
   email String @unique
-  username String
+  username String @unique
   password String
 
   createdAt DateTime  @default(now())
@@ -50,4 +47,6 @@ model Hunch {
   game    Game   @relation(fields: [gameId], references: [id])
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
+
+  @@unique([userId, gameId])
 }
